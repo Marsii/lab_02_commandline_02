@@ -140,7 +140,7 @@ http://foureyes.github.io/mtec1002-spring2014/labs/02/mtec1002-lab-02.zip
 Download the file using curl... to a file called mtec1002-lab-02.zip using the commandline.  
 
 REMEMBER to use the -o flag, and follow it with a .zip extension! 
-
+ 
 Use ls to verify that it downloaded.
 
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
@@ -156,8 +156,9 @@ curl -o mtec1002-lab-02.zip http://foureyes.github.io/mtec1002-spring2014/labs/0
 
 Write down the command that you used to uncompress the file.
 ----------
+unzip
 
-
+Despite numerous attempts, the file cannot be unzipped. I attempted to do it through traditional means and it states that the file is invalid.
 
 ==========
 15. Change to the directory that was just created.  List the contents (of the directory that was extracted from the labs .zip file). 
@@ -165,7 +166,7 @@ Write down the command that you used to uncompress the file.
 Copy and paste the output below.
 ----------
 
-
+Can't do due to invalidity of file.
 
 ==========
 We're going to mess around with archiving and compressing files.  We'll make a directory with a file in it... archive and compress it.... and uncompress it elsewhere.
@@ -175,8 +176,61 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 
 Copy and paste the output below.
 ----------
-
-
+ AppData/
+'Application Data'@
+'bent pose.twd'
+'Blender and Modeling stuff'/
+ Contacts/
+ Cookies@
+ Desktop/
+ differ.twd
+ Documents/
+ Downloads/
+ dtfight.twd
+ Falling.twd
+ Favorites/
+'FS 3.twd'
+ help/
+ Links/
+ lmms/
+'Local Settings'@
+'Malware Hunter'/
+ metamorph.twd
+ mtec1002/
+ mtec1002-lab-02.txt
+ mtec1002-lab-02.zip
+ mtec1003/
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ NTUSER.DAT.gu.bak
+ NTUSER.DAT.gu.LOG1
+ NTUSER.DAT.gu.LOG2
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.0.regtrans-ms
+ NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.1.regtrans-ms
+ NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.2.regtrans-ms
+ NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.blf
+ NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TM.blf
+ NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Sailor Pose.twd'
+'Saved Games'/
+ Searches/
+ SendTo@
+'sitting pose.twd'
+'Start Menu'@
+ stuff/
+ Templates@
+ test_3.save
+ Videos/
 
 ==========
 17. Change into the "stuff" directory that you just created.  Run the following command (we haven't learned this exact command yet, but we will in the next lab!) exactly as described below:
@@ -187,7 +241,7 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
-
+hello.txt
 
 
 ==========
@@ -199,7 +253,62 @@ List the files in the directory you're currently in (which should be home).
 
 Copy and paste the output below.
 ----------
-
+ AppData/
+'Application Data'@
+'bent pose.twd'
+'Blender and Modeling stuff'/
+ Contacts/
+ Cookies@
+ Desktop/
+ differ.twd
+ Documents/
+ Downloads/
+ dtfight.twd
+ Falling.twd
+ Favorites/
+'FS 3.twd'
+ help/
+ Links/
+ lmms/
+'Local Settings'@
+'Malware Hunter'/
+ metamorph.twd
+ mtec1002/
+ mtec1002-lab-02.txt
+ mtec1002-lab-02.zip
+ mtec1003/
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ NTUSER.DAT.gu.bak
+ NTUSER.DAT.gu.LOG1
+ NTUSER.DAT.gu.LOG2
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.0.regtrans-ms
+ NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.1.regtrans-ms
+ NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.2.regtrans-ms
+ NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.blf
+ NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TM.blf
+ NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Sailor Pose.twd'
+'Saved Games'/
+ Searches/
+ SendTo@
+'sitting pose.twd'
+'Start Menu'@
+ stuff/
+ stuff.tar
+ Templates@
+ test_3.save
+ Videos/
 
 
 ==========
@@ -210,15 +319,69 @@ $ tar -cvf stuff.tar stuff
 Copy and paste the output below.
 ----------
 
-
-
+stuff/
+stuff/hello.txt
 ==========
 20. List the files in the directory you're currently in (which should be home).  
 
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
-
-
+ AppData/
+'Application Data'@
+'bent pose.twd'
+'Blender and Modeling stuff'/
+ Contacts/
+ Cookies@
+ Desktop/
+ differ.twd
+ Documents/
+ Downloads/
+ dtfight.twd
+ Falling.twd
+ Favorites/
+'FS 3.twd'
+ help/
+ Links/
+ lmms/
+'Local Settings'@
+'Malware Hunter'/
+ metamorph.twd
+ mtec1002/
+ mtec1002-lab-02.txt
+ mtec1002-lab-02.zip
+ mtec1003/
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ NTUSER.DAT.gu.bak
+ NTUSER.DAT.gu.LOG1
+ NTUSER.DAT.gu.LOG2
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.0.regtrans-ms
+ NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.1.regtrans-ms
+ NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.2.regtrans-ms
+ NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.blf
+ NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TM.blf
+ NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Sailor Pose.twd'
+'Saved Games'/
+ Searches/
+ SendTo@
+'sitting pose.twd'
+'Start Menu'@
+ stuff/
+ stuff.tar
+ Templates@
+ test_3.save
+ Videos/
 
 ==========
 21. Now compress it!  Type:
@@ -227,7 +390,62 @@ gzip stuff.tar
 
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
-
+ AppData/
+'Application Data'@
+'bent pose.twd'
+'Blender and Modeling stuff'/
+ Contacts/
+ Cookies@
+ Desktop/
+ differ.twd
+ Documents/
+ Downloads/
+ dtfight.twd
+ Falling.twd
+ Favorites/
+'FS 3.twd'
+ help/
+ Links/
+ lmms/
+'Local Settings'@
+'Malware Hunter'/
+ metamorph.twd
+ mtec1002/
+ mtec1002-lab-02.txt
+ mtec1002-lab-02.zip
+ mtec1003/
+ Music/
+'My Documents'@
+ NetHood@
+ NTUSER.DAT
+ NTUSER.DAT.gu.bak
+ NTUSER.DAT.gu.LOG1
+ NTUSER.DAT.gu.LOG2
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.0.regtrans-ms
+ NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.1.regtrans-ms
+ NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.2.regtrans-ms
+ NTUSER.DAT{bbed3e3a-0b41-11e3-8249-d6927d06400b}.TxR.blf
+ NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TM.blf
+ NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{bbed3e3b-0b41-11e3-8249-d6927d06400b}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Sailor Pose.twd'
+'Saved Games'/
+ Searches/
+ SendTo@
+'sitting pose.twd'
+'Start Menu'@
+ stuff/
+ stuff.tar.gz
+ Templates@
+ test_3.save
+ Videos/
 
 
 ==========
@@ -241,7 +459,7 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
-
+stuff.tar.gz
 
 ==========
 23. You should be in the lab directory.  Let's uncompress the file.
@@ -250,7 +468,7 @@ $ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
-
+stuff/  stuff.tar.gz
 
 
 ==========
@@ -258,7 +476,7 @@ List the files.  Copy and paste the output below (the folder, stuff, should be t
 [No output]
 ----------
 
-
+no output
 
 ==========
 25. Download and uncompress this file using curl and tar -xvf in your home directory:
@@ -270,8 +488,10 @@ REMEMBER to use the -o flag and specifiy a filenmae that ends in .tar.gz
 Write out the commands that you used to do this.
 ----------
 
-
+ curl -o secretlab.tar.gz http://foureyes.github.io/mtec1002/labs/02/secret.tar.gz
 
 ==========
 26. How many files were in the archive.  What were their names?  Write out your answers below.
 ----------
+It can't be open. There seems to be an issue with the file. I can't reach the website where it's suppose to be either so I don't know if that's related.
+I attempted to open it using the command tar -xvf secret.tar.gz and through traditional means. Neither worked.
